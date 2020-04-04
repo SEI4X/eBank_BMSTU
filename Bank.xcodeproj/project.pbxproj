@@ -7,25 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A56C0C77FFBFA1481070E952 /* libPods-Bank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A674FBF98B47A2225F74933A /* libPods-Bank.a */; };
+		BD5786A02437DB9B009BD46F /* AddClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD57869F2437DB9B009BD46F /* AddClientViewController.swift */; };
+		BD76FA9E2437626A00E48C31 /* ClientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76FA9D2437626A00E48C31 /* ClientsCell.swift */; };
 		BD90249B24254F9A00A756DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90249A24254F9A00A756DA /* AppDelegate.swift */; };
 		BD90249D24254F9A00A756DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90249C24254F9A00A756DA /* SceneDelegate.swift */; };
-		BD90249F24254F9A00A756DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90249E24254F9A00A756DA /* ViewController.swift */; };
-		BD9024A224254F9A00A756DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9024A024254F9A00A756DA /* Main.storyboard */; };
-		BD9024A524254F9A00A756DA /* Bank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD9024A324254F9A00A756DA /* Bank.xcdatamodeld */; };
+		BD90249F24254F9A00A756DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90249E24254F9A00A756DA /* MainViewController.swift */; };
 		BD9024A724254F9E00A756DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9024A624254F9E00A756DA /* Assets.xcassets */; };
 		BD9024AA24254F9E00A756DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9024A824254F9E00A756DA /* LaunchScreen.storyboard */; };
+		BD9024B2242550EF00A756DA /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9024B1242550EF00A756DA /* MainData.swift */; };
+		BD9024B4242554BE00A756DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9024B3242554BE00A756DA /* LoginViewController.swift */; };
+		BDB74A052438C6F8005BA7B2 /* AddTransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB74A042438C6F8005BA7B2 /* AddTransactionViewController.swift */; };
+		BDB74A072438C920005BA7B2 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB74A062438C920005BA7B2 /* AddAccountViewController.swift */; };
+		BDFCF8F424255BF8008C1DDF /* TransactionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFCF8F324255BF8008C1DDF /* TransactionsController.swift */; };
+		BDFCF8F624255C31008C1DDF /* AccountsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFCF8F524255C31008C1DDF /* AccountsController.swift */; };
+		BDFCF8F824255C4F008C1DDF /* LoansController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFCF8F724255C4F008C1DDF /* LoansController.swift */; };
+		BDFCF8FA24255C8B008C1DDF /* ClientsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFCF8F924255C8B008C1DDF /* ClientsController.swift */; };
+		BDFCF90024255CC1008C1DDF /* EmployeesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFCF8FF24255CC1008C1DDF /* EmployeesController.swift */; };
+		BDFCF90224255CD1008C1DDF /* BranchesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFCF90124255CD1008C1DDF /* BranchesController.swift */; };
+		BDFCF90424255CEE008C1DDF /* ATMsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFCF90324255CEE008C1DDF /* ATMsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38F5B8C3DB3B700AE23963A5 /* Pods-Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bank.release.xcconfig"; path = "Target Support Files/Pods-Bank/Pods-Bank.release.xcconfig"; sourceTree = "<group>"; };
+		4B778D58243D0BEF553519C7 /* Pods-Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bank.debug.xcconfig"; path = "Target Support Files/Pods-Bank/Pods-Bank.debug.xcconfig"; sourceTree = "<group>"; };
+		A674FBF98B47A2225F74933A /* libPods-Bank.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bank.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD57869F2437DB9B009BD46F /* AddClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientViewController.swift; sourceTree = "<group>"; };
+		BD76FA9D2437626A00E48C31 /* ClientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsCell.swift; sourceTree = "<group>"; };
 		BD90249724254F9A00A756DA /* Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD90249A24254F9A00A756DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD90249C24254F9A00A756DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BD90249E24254F9A00A756DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BD9024A124254F9A00A756DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BD9024A424254F9A00A756DA /* Bank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bank.xcdatamodel; sourceTree = "<group>"; };
+		BD90249E24254F9A00A756DA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BD9024A624254F9E00A756DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD9024A924254F9E00A756DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD9024AB24254F9E00A756DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD9024B1242550EF00A756DA /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
+		BD9024B3242554BE00A756DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BDB74A042438C6F8005BA7B2 /* AddTransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionViewController.swift; sourceTree = "<group>"; };
+		BDB74A062438C920005BA7B2 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		BDFCF8F324255BF8008C1DDF /* TransactionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsController.swift; sourceTree = "<group>"; };
+		BDFCF8F524255C31008C1DDF /* AccountsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsController.swift; sourceTree = "<group>"; };
+		BDFCF8F724255C4F008C1DDF /* LoansController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoansController.swift; sourceTree = "<group>"; };
+		BDFCF8F924255C8B008C1DDF /* ClientsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsController.swift; sourceTree = "<group>"; };
+		BDFCF8FF24255CC1008C1DDF /* EmployeesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesController.swift; sourceTree = "<group>"; };
+		BDFCF90124255CD1008C1DDF /* BranchesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchesController.swift; sourceTree = "<group>"; };
+		BDFCF90324255CEE008C1DDF /* ATMsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATMsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +59,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56C0C77FFBFA1481070E952 /* libPods-Bank.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		51D4EF75076DBB6E11610CED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A674FBF98B47A2225F74933A /* libPods-Bank.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD76FA9C243761D200E48C31 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BD76FA9D2437626A00E48C31 /* ClientsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		BD90248E24254F9900A756DA = {
 			isa = PBXGroup;
 			children = (
 				BD90249924254F9A00A756DA /* Bank */,
 				BD90249824254F9A00A756DA /* Products */,
+				E41AB97E5A122A16ECB27997 /* Pods */,
+				51D4EF75076DBB6E11610CED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +105,50 @@
 			children = (
 				BD90249A24254F9A00A756DA /* AppDelegate.swift */,
 				BD90249C24254F9A00A756DA /* SceneDelegate.swift */,
-				BD90249E24254F9A00A756DA /* ViewController.swift */,
-				BD9024A024254F9A00A756DA /* Main.storyboard */,
+				BD9024B1242550EF00A756DA /* MainData.swift */,
+				BDB74A032438831F005BA7B2 /* AddViews */,
+				BD76FA9C243761D200E48C31 /* Cells */,
+				BDFCF90524255CF7008C1DDF /* TableViews */,
 				BD9024A624254F9E00A756DA /* Assets.xcassets */,
 				BD9024A824254F9E00A756DA /* LaunchScreen.storyboard */,
 				BD9024AB24254F9E00A756DA /* Info.plist */,
-				BD9024A324254F9A00A756DA /* Bank.xcdatamodeld */,
 			);
 			path = Bank;
+			sourceTree = "<group>";
+		};
+		BDB74A032438831F005BA7B2 /* AddViews */ = {
+			isa = PBXGroup;
+			children = (
+				BD57869F2437DB9B009BD46F /* AddClientViewController.swift */,
+				BDB74A042438C6F8005BA7B2 /* AddTransactionViewController.swift */,
+				BDB74A062438C920005BA7B2 /* AddAccountViewController.swift */,
+			);
+			path = AddViews;
+			sourceTree = "<group>";
+		};
+		BDFCF90524255CF7008C1DDF /* TableViews */ = {
+			isa = PBXGroup;
+			children = (
+				BD90249E24254F9A00A756DA /* MainViewController.swift */,
+				BDFCF8F324255BF8008C1DDF /* TransactionsController.swift */,
+				BDFCF8F524255C31008C1DDF /* AccountsController.swift */,
+				BDFCF8F724255C4F008C1DDF /* LoansController.swift */,
+				BDFCF8FF24255CC1008C1DDF /* EmployeesController.swift */,
+				BDFCF90124255CD1008C1DDF /* BranchesController.swift */,
+				BDFCF90324255CEE008C1DDF /* ATMsController.swift */,
+				BDFCF8F924255C8B008C1DDF /* ClientsController.swift */,
+				BD9024B3242554BE00A756DA /* LoginViewController.swift */,
+			);
+			path = TableViews;
+			sourceTree = "<group>";
+		};
+		E41AB97E5A122A16ECB27997 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B778D58243D0BEF553519C7 /* Pods-Bank.debug.xcconfig */,
+				38F5B8C3DB3B700AE23963A5 /* Pods-Bank.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +158,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD9024AE24254F9E00A756DA /* Build configuration list for PBXNativeTarget "Bank" */;
 			buildPhases = (
+				854C6A088485BBD9DEB167D9 /* [CP] Check Pods Manifest.lock */,
 				BD90249324254F9A00A756DA /* Sources */,
 				BD90249424254F9A00A756DA /* Frameworks */,
 				BD90249524254F9A00A756DA /* Resources */,
@@ -130,35 +212,63 @@
 			files = (
 				BD9024AA24254F9E00A756DA /* LaunchScreen.storyboard in Resources */,
 				BD9024A724254F9E00A756DA /* Assets.xcassets in Resources */,
-				BD9024A224254F9A00A756DA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		854C6A088485BBD9DEB167D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD90249324254F9A00A756DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD90249F24254F9A00A756DA /* ViewController.swift in Sources */,
-				BD9024A524254F9A00A756DA /* Bank.xcdatamodeld in Sources */,
+				BDFCF90424255CEE008C1DDF /* ATMsController.swift in Sources */,
+				BD9024B2242550EF00A756DA /* MainData.swift in Sources */,
+				BD90249F24254F9A00A756DA /* MainViewController.swift in Sources */,
+				BDFCF90024255CC1008C1DDF /* EmployeesController.swift in Sources */,
+				BD9024B4242554BE00A756DA /* LoginViewController.swift in Sources */,
 				BD90249B24254F9A00A756DA /* AppDelegate.swift in Sources */,
+				BDFCF8F824255C4F008C1DDF /* LoansController.swift in Sources */,
 				BD90249D24254F9A00A756DA /* SceneDelegate.swift in Sources */,
+				BDFCF8F424255BF8008C1DDF /* TransactionsController.swift in Sources */,
+				BD5786A02437DB9B009BD46F /* AddClientViewController.swift in Sources */,
+				BDFCF90224255CD1008C1DDF /* BranchesController.swift in Sources */,
+				BDFCF8FA24255C8B008C1DDF /* ClientsController.swift in Sources */,
+				BDB74A052438C6F8005BA7B2 /* AddTransactionViewController.swift in Sources */,
+				BD76FA9E2437626A00E48C31 /* ClientsCell.swift in Sources */,
+				BDB74A072438C920005BA7B2 /* AddAccountViewController.swift in Sources */,
+				BDFCF8F624255C31008C1DDF /* AccountsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BD9024A024254F9A00A756DA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BD9024A124254F9A00A756DA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BD9024A824254F9E00A756DA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -220,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -286,14 +396,15 @@
 		};
 		BD9024AF24254F9E00A756DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B778D58243D0BEF553519C7 /* Pods-Bank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3M7ZA8M45;
 				INFOPLIST_FILE = Bank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SEI4X.Bank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,14 +415,15 @@
 		};
 		BD9024B024254F9E00A756DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38F5B8C3DB3B700AE23963A5 /* Pods-Bank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3M7ZA8M45;
 				INFOPLIST_FILE = Bank/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
 					"@executable_path/Frameworks",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SEI4X.Bank;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -342,19 +454,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		BD9024A324254F9A00A756DA /* Bank.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				BD9024A424254F9A00A756DA /* Bank.xcdatamodel */,
-			);
-			currentVersion = BD9024A424254F9A00A756DA /* Bank.xcdatamodel */;
-			path = Bank.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = BD90248F24254F9900A756DA /* Project object */;
 }
