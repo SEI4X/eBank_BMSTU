@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A56C0C77FFBFA1481070E952 /* libPods-Bank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A674FBF98B47A2225F74933A /* libPods-Bank.a */; };
+		BD241D9A24478820008A5305 /* AddClientHTTPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD241D9924478820008A5305 /* AddClientHTTPS.swift */; };
 		BD5786A02437DB9B009BD46F /* AddClientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD57869F2437DB9B009BD46F /* AddClientViewController.swift */; };
+		BD6392932448BCE8003C35DA /* GetClients.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6392922448BCE8003C35DA /* GetClients.swift */; };
 		BD76FA9E2437626A00E48C31 /* ClientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD76FA9D2437626A00E48C31 /* ClientsCell.swift */; };
 		BD90249B24254F9A00A756DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90249A24254F9A00A756DA /* AppDelegate.swift */; };
 		BD90249D24254F9A00A756DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD90249C24254F9A00A756DA /* SceneDelegate.swift */; };
@@ -32,7 +34,9 @@
 		38F5B8C3DB3B700AE23963A5 /* Pods-Bank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bank.release.xcconfig"; path = "Target Support Files/Pods-Bank/Pods-Bank.release.xcconfig"; sourceTree = "<group>"; };
 		4B778D58243D0BEF553519C7 /* Pods-Bank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bank.debug.xcconfig"; path = "Target Support Files/Pods-Bank/Pods-Bank.debug.xcconfig"; sourceTree = "<group>"; };
 		A674FBF98B47A2225F74933A /* libPods-Bank.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Bank.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD241D9924478820008A5305 /* AddClientHTTPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientHTTPS.swift; sourceTree = "<group>"; };
 		BD57869F2437DB9B009BD46F /* AddClientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientViewController.swift; sourceTree = "<group>"; };
+		BD6392922448BCE8003C35DA /* GetClients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetClients.swift; sourceTree = "<group>"; };
 		BD76FA9D2437626A00E48C31 /* ClientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientsCell.swift; sourceTree = "<group>"; };
 		BD90249724254F9A00A756DA /* Bank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD90249A24254F9A00A756DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +78,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD6392912448B1F8003C35DA /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				BDFCF8F924255C8B008C1DDF /* ClientsController.swift */,
+				BD57869F2437DB9B009BD46F /* AddClientViewController.swift */,
+				BD241D9924478820008A5305 /* AddClientHTTPS.swift */,
+				BD6392922448BCE8003C35DA /* GetClients.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
 		BD76FA9C243761D200E48C31 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +121,7 @@
 				BD90249A24254F9A00A756DA /* AppDelegate.swift */,
 				BD90249C24254F9A00A756DA /* SceneDelegate.swift */,
 				BD9024B1242550EF00A756DA /* MainData.swift */,
+				BD6392912448B1F8003C35DA /* Clients */,
 				BDB74A032438831F005BA7B2 /* AddViews */,
 				BD76FA9C243761D200E48C31 /* Cells */,
 				BDFCF90524255CF7008C1DDF /* TableViews */,
@@ -119,7 +135,6 @@
 		BDB74A032438831F005BA7B2 /* AddViews */ = {
 			isa = PBXGroup;
 			children = (
-				BD57869F2437DB9B009BD46F /* AddClientViewController.swift */,
 				BDB74A042438C6F8005BA7B2 /* AddTransactionViewController.swift */,
 				BDB74A062438C920005BA7B2 /* AddAccountViewController.swift */,
 			);
@@ -136,7 +151,6 @@
 				BDFCF8FF24255CC1008C1DDF /* EmployeesController.swift */,
 				BDFCF90124255CD1008C1DDF /* BranchesController.swift */,
 				BDFCF90324255CEE008C1DDF /* ATMsController.swift */,
-				BDFCF8F924255C8B008C1DDF /* ClientsController.swift */,
 				BD9024B3242554BE00A756DA /* LoginViewController.swift */,
 			);
 			path = TableViews;
@@ -261,8 +275,10 @@
 				BDFCF8FA24255C8B008C1DDF /* ClientsController.swift in Sources */,
 				BDB74A052438C6F8005BA7B2 /* AddTransactionViewController.swift in Sources */,
 				BD76FA9E2437626A00E48C31 /* ClientsCell.swift in Sources */,
+				BD241D9A24478820008A5305 /* AddClientHTTPS.swift in Sources */,
 				BDB74A072438C920005BA7B2 /* AddAccountViewController.swift in Sources */,
 				BDFCF8F624255C31008C1DDF /* AccountsController.swift in Sources */,
+				BD6392932448BCE8003C35DA /* GetClients.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

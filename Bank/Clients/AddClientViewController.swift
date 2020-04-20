@@ -11,23 +11,23 @@ import UIKit
 class AddClientViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
 
 //MARK: - Items initial
-    var country = 0
-    var date = String()
-    var beer = 0
+    static var firstName = String()
+    static var secondName = String()
+    static var date = String()
+    static var passport = String()
+    static var country = String()
+    static var message = String()
     private let firstNameTF = UITextField()
     private let secondNameTF = UITextField()
-    private let ageLable = UILabel()
-    private let ageTF = UITextField()
+    private let passportTF = UITextField()
     private let countryLable = UILabel()
     private let countryPicker = UIPickerView()
-    private let partyLable = UILabel()
+    private let dateLable = UILabel()
     private let datePicker = UIDatePicker()
-    private let favBeerLable = UILabel()
-    private let favBeerPicker = UIPickerView()
     private let confirmButton = UIButton()
     private let mainLable: UILabel = {
         let text = UILabel()
-        text.text = "Новый член партии"
+        text.text = "Новый клиент"
         text.textColor = .lightGray
         text.textAlignment = .center
         text.frame = CGRect(x: 10, y: 10, width: 280, height: 40)
@@ -50,17 +50,15 @@ class AddClientViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         
         self.hideKeyboardWhenTappedAround()
         view.addSubview(mainLable)
-        scrollViewSetup()
+//        scrollViewSetup()
         countryLableSetup()
         buttonSetup()
         firstNamesSetup()
         secondNamesSetup()
-        ageSetup()
+        passportSetup()
         countryPickerSetup()
         datePickerSetup()
-        favBeerPickerSetup()
-        favBeerLableSetup()
-        partyLableSetup()
+        dateLableSetup()
     }
     
 //MARK: - Names textFields setups
@@ -71,7 +69,7 @@ class AddClientViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         firstNameTF.textAlignment = .center
         firstNameTF.placeholder = "Имя"
         
-        scrollView.addSubview(firstNameTF)
+        view.addSubview(firstNameTF)
     }
     
     func secondNamesSetup(){
@@ -81,18 +79,18 @@ class AddClientViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         secondNameTF.textAlignment = .center
         secondNameTF.placeholder = "Фамилия"
         
-        scrollView.addSubview(secondNameTF)
+        view.addSubview(secondNameTF)
     }
     
 //MARK: - Age TF setup
-    func ageSetup(){
-        ageTF.frame = CGRect(x: view.bounds.midX - tfWidth / 2, y: 160, width: tfWidth, height: tfHeight)
-        ageTF.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.9)
-        ageTF.layer.cornerRadius = 15
-        ageTF.textAlignment = .center
-        ageTF.placeholder = "Возраст"
+    func passportSetup(){
+        passportTF.frame = CGRect(x: view.bounds.midX - tfWidth / 2, y: 160, width: tfWidth, height: tfHeight)
+        passportTF.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.9)
+        passportTF.layer.cornerRadius = 15
+        passportTF.textAlignment = .center
+        passportTF.placeholder = "Номер паспорта"
         
-        scrollView.addSubview(ageTF)
+        view.addSubview(passportTF)
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -101,33 +99,15 @@ class AddClientViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
 //MARK: - Pickers setup
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        if pickerView == countryPicker {
             return Countries.countries.count
-        } else if pickerView == favBeerPicker{
-   //       return RegData.beer.count
-            return 0
-        } else {
-            return 0
-        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        if pickerView == countryPicker {
             return Countries.countries[row]
-        } else if pickerView == favBeerPicker{
-   //         return RegData.beer[row]
-            return "Error"
-        } else {
-            return "Error"
-        }
     }
 
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-         if pickerView == countryPicker {
-             country = row
-         } else if pickerView == favBeerPicker{
-             beer = row
-         }
+        AddClientViewController.country = Countries.countries[row]
     }
     
     
@@ -141,24 +121,24 @@ class AddClientViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         countryPicker.layer.cornerRadius = 15
         countryPicker.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.9)
         
-        scrollView.addSubview(countryPicker)
+        view.addSubview(countryPicker)
     }
     
     func countryLableSetup(){
         let width: CGFloat = 300
         let height: CGFloat = 20
-        countryLable.text = "Страна"
+        countryLable.text = "Гражданство"
         countryLable.textColor = .lightGray
         countryLable.frame = CGRect(x: view.bounds.midX - width / 2, y: 220, width: width, height: height)
         countryLable.font = .systemFont(ofSize: 20)
         
-        scrollView.addSubview(countryLable)
+        view.addSubview(countryLable)
     }
     
 //MARK: - Date Picker setup
     func datePickerSetup(){
         let width: CGFloat = 300
-        let height: CGFloat = 150
+        let height: CGFloat = 220
         let date = DateFormatter()
         date.dateFormat = "yyyy-mm-dd"
 
@@ -167,56 +147,32 @@ class AddClientViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         datePicker.maximumDate = date.date(from: "2002-01-01")
         datePicker.minimumDate = date.date(from: "1930-01-01")
         datePicker.layer.cornerRadius = 15
+        datePicker.layer.masksToBounds = true
         datePicker.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.9)
         
-        scrollView.addSubview(datePicker)
+        view.addSubview(datePicker)
     }
     
-    func datePickerData(){
+    func datePickerData()-> String? {
         let dateFormatter = DateFormatter()
-
 //        dateFormatter.dateStyle = DateFormatter.Style.short   // You can also use Long, Medium and No style.
 //        dateFormatter.timeStyle = DateFormatter.Style.none
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
-        date = dateFormatter.string(from: datePicker.date)
-        print(date)
+        return dateFormatter.string(from: datePicker.date)
     }
     
-    func partyLableSetup(){
+    func dateLableSetup(){
         let width: CGFloat = 300
         let height: CGFloat = 20
-        partyLable.text = "Партия"
-        partyLable.textColor = .lightGray
-        partyLable.frame = CGRect(x: view.bounds.midX - width / 2, y: 420, width: width, height: height)
-        partyLable.font = .systemFont(ofSize: 20)
+        dateLable.text = "Год рождения"
+        dateLable.textColor = .lightGray
+        dateLable.frame = CGRect(x: view.bounds.midX - width / 2, y: 420, width: width, height: height)
+        dateLable.font = .systemFont(ofSize: 20)
         
-        scrollView.addSubview(partyLable)
+        view.addSubview(dateLable)
     }
     
-//MARK: - Favourite beer Picker setup
-    func favBeerPickerSetup(){
-        let width: CGFloat = 300
-        let height: CGFloat = 150
-        favBeerPicker.frame = CGRect(x: view.bounds.midX - width / 2, y: 650, width: width, height: height)
-        favBeerPicker.delegate = self
-        favBeerPicker.dataSource = self
-        favBeerPicker.layer.cornerRadius = 15
-        favBeerPicker.backgroundColor = UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 0.9)
-        
-        scrollView.addSubview(favBeerPicker)
-    }
-    
-    func favBeerLableSetup(){
-        let width: CGFloat = 300
-        let height: CGFloat = 20
-        favBeerLable.text = "Любимое пиво"
-        favBeerLable.textColor = .lightGray
-        favBeerLable.frame = CGRect(x: view.bounds.midX - width / 2, y: 620, width: width, height: height)
-        favBeerLable.font = .systemFont(ofSize: 20)
-        
-        scrollView.addSubview(favBeerLable)
-    }
     
 //MARK: - Confirm button setup
     func buttonSetup(){
@@ -231,36 +187,44 @@ class AddClientViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     
     @objc func buttonTouch(){
         if firstNameTF.text != "" && secondNameTF.text != ""
-            && Int(ageTF.text!) != nil && country != 0{
-            successAlert()
+            && Int(passportTF.text!) != nil && AddClientViewController.country != "" &&
+            datePickerData() != "" {
+            AddClientViewController.firstName = self.firstNameTF.text!
+            AddClientViewController.secondName = self.secondNameTF.text!
+            AddClientViewController.date = self.datePickerData()!
+            AddClientViewController.passport = self.passportTF.text!
+            
+            AddClient().addClient()
+            
+            successAlert(message: AddClientViewController.message)
         } else {
             failAlert()
         }
     }
     
 //MARK: - ScrollView setup
-    func scrollViewSetup(){
-        self.view.addSubview(scrollView)
-
-        // constrain the scroll view to 8-pts on each side
-        scrollView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 2).isActive = true
-        scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 55).isActive = true
-        scrollView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -2).isActive = true
-        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -2).isActive = true
-        scrollView.contentSize = CGSize(width: scrollView.bounds.width - 2, height: 810)
-    }
+//    func scrollViewSetup(){
+//        self.view.addSubview(scrollView)
+//
+//        // constrain the scroll view to 8-pts on each side
+//        scrollView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 2).isActive = true
+//        scrollView.topAnchor.constraint(equalTo: view.topAnchor, constant: 55).isActive = true
+//        scrollView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -2).isActive = true
+//        scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -2).isActive = true
+//        scrollView.contentSize = CGSize(width: scrollView.bounds.width - 2, height: 810)
+//    }
     
 //MARK: - Alert setups
-    func successAlert() {
+    func successAlert(message: String) {
        // Create the action buttons for the alert.
         let okAction = UIAlertAction(title: "OK", style: .default) { (action) in
-            self.datePickerData()
+            
             self.dismiss(animated: true, completion: nil)
        }
         
        // Create and configure the alert controller.
        let alert = UIAlertController(title: "Успешно",
-             message: "Пользователь успешно добавлен",
+                                     message: "Пользователь создан успешно",
              preferredStyle: .alert)
        alert.addAction(okAction)
             
@@ -285,7 +249,6 @@ class AddClientViewController: UIViewController, UIPickerViewDelegate, UIPickerV
           // The alert was presented
        }
     }
-    
 }
 
 
